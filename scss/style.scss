@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+%header {
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #95afc0;
+}
+
+%title {
+    width: 100%;
+    font: bold 18px Verdana, sans-serif;
+    color: #30336b;
+    text-transform: uppercase;
+}
+
+%btn {
+    padding: 5px 15px;
+    width: 100%;
+    display: block;
+    border-radius: 3px;
+    border: none;
+    border-bottom: 3px solid #95afc0;
+    font: bold 11px Verdana, sans-serif;
+    color: #30336b;
+    background-color: transparent;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.index {
+    margin: 0;
+    padding: 0 10px;
+    background-color: red;  
+
+}
