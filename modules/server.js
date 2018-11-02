@@ -23,6 +23,7 @@ function start() {
             break;
         case '/style.css':
             handlers.css(request, response);
+            break;
         default:
             handlers.error(request, response);
     }

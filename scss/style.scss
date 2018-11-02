@@ -2,40 +2,80 @@
     box-sizing: border-box;
 }
 
-%header {
-    width: 100%;
-    padding: 0 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 3px solid #95afc0;
-}
-
-%title {
-    width: 100%;
-    font: bold 18px Verdana, sans-serif;
-    color: #30336b;
-    text-transform: uppercase;
-}
-
-%btn {
-    padding: 5px 15px;
-    width: 100%;
-    display: block;
-    border-radius: 3px;
-    border: none;
-    border-bottom: 3px solid #95afc0;
-    font: bold 11px Verdana, sans-serif;
-    color: #30336b;
-    background-color: transparent;
-    &:hover {
-        cursor: pointer;
-    }
-}
-
 .index {
-    margin: 0;
+    margin: 0 auto;
     padding: 0 10px;
-    background-color: red;  
+    background-color: #93DD73;  
+    
+
+    h1 {
+        width: 100%;
+        padding: 0 10px;
+        text-align: center;
+        font: 20px Verdana, sans-serif;
+        color: #1E6400;
+        text-transform: uppercase;
+    }
+
+    form {
+        margin: 0 auto;
+        width: 500px;
+        height: auto;
+        
+        .inputContainer {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            & > label {
+                margin: 0 0 10px 0;
+                padding: 5px;
+                font: bold 14px Verdana, sans-serif;
+                text-transform: uppercase;
+                color: #1E6400;
+            }
+
+            & > input {
+                width: auto;
+                margin: 0 0 10px 0;
+                padding: 5px;
+                font: 14px Verdana, sans-serif;
+                color: #1E6400;
+                background-color: #CFEFC1;
+                border-radius: 3px;
+                border: 1px solid #348A0F;
+                &:hover {
+                    border: 1px solid #CFEFC1;
+                    
+                }
+
+                &[type=file] {
+                    border: none;
+                    font: 12px Verdana, sans-serif;
+                    background-color: transparent;
+                }
+            }
+        }
+
+        input {
+            padding: 5px 15px;
+            width: 20%;
+            display: block;
+            border-radius: 3px;
+            border: none;
+            font: bold 11px Verdana, sans-serif;
+            color: #fff;
+            background-color: #1E6400;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    img {
+        width: fit-content;
+        height: auto;
+    }
 
 }
